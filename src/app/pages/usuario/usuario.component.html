@@ -1,0 +1,45 @@
+
+<body>
+    <h1>Customize seu site</h1>
+    
+    <div class="form">
+  <mat-form-field appearance="fill">
+      <mat-label>Cor da fonte</mat-label>
+      <input matInput type="color" [(ngModel)]="fontColor" (change)="updateColors()">
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill">
+        <mat-label>Tamanho da fonte (px)</mat-label>
+        <input matInput type="number" [(ngModel)]="fontSize" (change)="updateColors()">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Espaçamento interno (padding) (px)</mat-label>
+        <input matInput type="number" [(ngModel)]="padding" (change)="updateColors()">
+    </mat-form-field>
+    
+  <mat-form-field appearance="fill">
+      <mat-label>Espaçamento externo (margin) (px)</mat-label>
+    <input matInput type="number" [(ngModel)]="margin" (change)="updateColors()">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+      <mat-label>Cor primária</mat-label>
+    <input matInput type="color" [(ngModel)]="primaryColor" (change)="updateColors()">
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+    <mat-label>Cor secundária</mat-label>
+    <input matInput type="color" [(ngModel)]="secondaryColor" (change)="updateColors()">
+</mat-form-field>
+</div>
+
+<div class="preview">
+    <div class="card">
+        <h2>Seu site personalizado</h2>
+        <p>Escolha suas cores e fontes preferidas.</p>
+
+
+    </div>
+</div>
+</body>
